@@ -5,13 +5,12 @@ function App() {
   const [count, setCount] = useState(0);
 
   const handleLogin = () => {
-    fetch("/server/auth/login", {
+    fetch("/server/api/user/auth/login", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        username: "emilys",
-        password: "emilyspass",
-        expiresInMins: 30, // optional, defaults to 60
+        email: "yasin7arafath@gmail.com",
+        password: "password123",
       }),
       credentials: "include", // Include cookies (e.g., accessToken) in the request
     })

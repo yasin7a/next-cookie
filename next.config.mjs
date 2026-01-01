@@ -6,7 +6,7 @@ const nextConfig = {
     return [
       {
         source: "/server/:path*",
-        destination: "https://dummyjson.com/:path*",
+        destination: "https://embassy-backend-fastify.onrender.com/:path*",
       },
     ];
   },
